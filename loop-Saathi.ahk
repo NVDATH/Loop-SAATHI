@@ -126,7 +126,7 @@ txtPath := SubStr(filePath, 1, nameNum-typeNum) "txt"
 if(regexmatch(ext,"apng|avif|gif|jpg|jpeg|jfif|pjpeg|pjp|png|svg|webp") > 0) {
 StdOut := StdOutToVar("cmd.exe /c magick -help")
 if(regexmatch(StdOut, "not recognized") > 0) {
-MsgBox,, loop Saathi เกิดข้อผิดพลาด!, คุณเลือกไฟล์รูปภาพ`nหากคุณต้องการถอดข้อความจากรูปภาพด้วยส่วนเสริมนี้ `nคุณจำเป็นต้องติดตั้งโปรแกรม Image Magick ก่อน`nโดยสามารถเข้าไปดาวโหลดโปรแกรม Image Magick ได้จาก https://imagemagick.org/script/download.php
+MsgBox,, loop Saathi เกิดข้อผิดพลาด!, คุณเลือกไฟล์รูปภาพ`nหากคุณต้องการถอดข้อความจากรูปภาพด้วยส่วนเสริมนี้ `nคุณจำเป็นต้องติดตั้งโปรแกรม ImageMagick ก่อน`nโดยสามารถเข้าไปดาวโหลดโปรแกรม ImageMagick ได้จาก https://imagemagick.org/script/download.php
 exitApp
 } else {
 Run, %comspec% /c magick.exe "%filePath%" "%pdfPath%",,hide
