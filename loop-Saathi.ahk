@@ -200,7 +200,7 @@ Gui, Add, Checkbox, vMyCheckbox1, export ไฟล์อัตโนมัติ
 Gui, Add, Checkbox, vMyCheckbox2, ลบข้อความระบุเลขหน้าที่สร้างจากโปรแกรม SAATHI รวมถึงข้อความ No text detected หากโปรแกรมไม่พบข้อความในหน้านั้นๆ
 Gui, Add, Checkbox, vMyCheckbox3, เปิดไฟล์ text ที่ export แล้วทันทีหลังจากส่วนเสริมทำงานสำเร็จ
 }
-Gui, Add, Button, default, Run
+Gui, Add, Button, default, เริ่ม
 Gui, Show,, loop Saathi
 return
 GuiClose:
@@ -209,12 +209,7 @@ Gui, Destroy
 exitApp
 return
 
-ButtonOK:
-Gui, Destroy
-exitApp
-return
-
-ButtonRun:
+Buttonเริ่ม:
 Gui, Submit
 if pageNum is number
 sleep,50
