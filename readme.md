@@ -1,7 +1,7 @@
 # Loop-SAATHI
 
 * ผู้พัฒนา: NVDA_TH <nvdainth@gmail.com>
-* ดาวน์โหลด [beta version](https://raw.githubusercontent.com/NVDATH/Loop-SAATHI/main/loop-Saathi-0.1.nvda-addon)
+* ดาวน์โหลด [beta version](https://raw.githubusercontent.com/NVDATH/Loop-SAATHI/main/loop-Saathi-0.2.nvda-addon)
 * เข้ากันได้กับ NVDA 2023.2
 
 ส่วนเสริมตัวนี้จะช่วยให้คุณสามารถใช้งานโปรแกรม SAATHI ได้สะดวกยิ่งขึ้น

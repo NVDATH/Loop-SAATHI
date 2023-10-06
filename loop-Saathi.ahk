@@ -129,7 +129,7 @@ if(regexmatch(StdOut, "not recognized") > 0) {
 MsgBox,, loop Saathi เกิดข้อผิดพลาด!, คุณเลือกไฟล์รูปภาพ`nหากคุณต้องการถอดข้อความจากรูปภาพด้วยส่วนเสริมนี้ `nคุณจำเป็นต้องติดตั้งโปรแกรม ImageMagick ก่อน`nโดยสามารถเข้าไปดาวโหลดโปรแกรม ImageMagick ได้จาก https://imagemagick.org/script/download.php
 exitApp
 } else {
-Run, %comspec% /c magick.exe "%filePath%" "%pdfPath%",,hide
+RunWait, %comspec% /c magick.exe "%filePath%" "%pdfPath%",,hide
 loop
 {
 IfExist, %pdfPath%
